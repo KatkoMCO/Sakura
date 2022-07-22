@@ -1,0 +1,93 @@
+uuid: cc13e64b-b4df-47fe-a5f0-280279958c8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.food_reviews.field_category
+    - field.field.node.food_reviews.field_flavour
+    - field.field.node.food_reviews.field_rating
+    - field.field.node.food_reviews.field_restaurant_name
+    - field.field.node.food_reviews.field_review_comments
+    - field.field.node.food_reviews.field_review_description
+    - field.field.node.food_reviews.field_review_image
+    - node.type.food_reviews
+  module:
+    - comment
+    - image
+    - starrating
+    - text
+    - user
+id: node.food_reviews.default
+targetEntityType: node
+bundle: food_reviews
+mode: default
+content:
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_flavour:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_rating:
+    type: starrating
+    label: above
+    settings:
+      fill_blank: 0
+      icon_type: star
+      icon_color: 1
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_restaurant_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_review_comments:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_review_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_review_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

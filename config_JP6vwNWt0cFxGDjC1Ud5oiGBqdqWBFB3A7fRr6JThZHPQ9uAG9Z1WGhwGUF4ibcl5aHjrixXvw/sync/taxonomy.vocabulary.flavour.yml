@@ -1,0 +1,8 @@
+uuid: c6141146-acc4-4399-a2af-2e7e57cee3ba
+langcode: en
+status: true
+dependencies: {  }
+name: Flavour
+vid: flavour
+description: 'Types of flavours'
+weight: 0

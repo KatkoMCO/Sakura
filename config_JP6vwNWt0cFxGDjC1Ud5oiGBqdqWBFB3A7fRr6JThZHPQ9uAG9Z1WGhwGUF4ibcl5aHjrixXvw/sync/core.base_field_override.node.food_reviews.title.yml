@@ -1,0 +1,18 @@
+uuid: 9cc0d301-2c0b-4523-8877-df19fe8b3627
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.food_reviews
+id: node.food_reviews.title
+field_name: title
+entity_type: node
+bundle: food_reviews
+label: 'Title of the dish'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

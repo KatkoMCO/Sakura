@@ -1,0 +1,25 @@
+uuid: c3f8d59b-e763-4fdd-91ec-ddef26565974
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sakura
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: sakura_branding
+theme: sakura
+region: branding
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 29a9c5e3-57a0-40e9-accc-ec6946e92a34
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sakura
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: sakura_breadcrumbs
+theme: sakura
+region: breadcrumb
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: ea87b119-4919-4b6b-a275-19b02aab7dd0
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - sakura
+_core:
+  default_config_hash: jQ-C8l3dJPqYCGST1e-kSjR14PDP4wq-iFbp8dMFcRo
+id: sakura_search
+theme: sakura
+region: sidebar_first
+weight: -14
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: fe12cd3f-b857-4d56-b110-676af3643006
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Footer
+description: ''
+locked: false

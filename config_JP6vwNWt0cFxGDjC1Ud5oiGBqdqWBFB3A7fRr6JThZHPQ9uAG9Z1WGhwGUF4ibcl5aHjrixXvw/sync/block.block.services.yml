@@ -1,0 +1,25 @@
+uuid: 28279928-673d-481d-ba13-1db40d78cf54
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.services
+  module:
+    - system
+  theme:
+    - sakura
+id: services
+theme: sakura
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:services'
+settings:
+  id: 'system_menu_block:services'
+  label: Services
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

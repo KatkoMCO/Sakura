@@ -1,0 +1,22 @@
+uuid: 7ca25f2c-65d6-49bf-920c-c25149803090
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sakura
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: sakura_content
+theme: sakura
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

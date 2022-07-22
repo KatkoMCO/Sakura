@@ -1,0 +1,8 @@
+uuid: 10ba37d3-9773-438d-a4ef-fe38f64261b8
+langcode: en
+status: true
+dependencies: {  }
+name: Categories
+vid: categories
+description: 'Types of dishes'
+weight: 0

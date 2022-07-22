@@ -1,0 +1,17 @@
+uuid: 0da3b099-ecc1-42aa-90a5-76c0268a06e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Food Reviews'
+type: food_reviews
+description: 'Template for food reviews'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

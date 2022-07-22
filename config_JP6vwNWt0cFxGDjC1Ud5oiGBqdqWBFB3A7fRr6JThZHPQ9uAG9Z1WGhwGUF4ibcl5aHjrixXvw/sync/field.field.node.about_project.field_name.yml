@@ -1,0 +1,19 @@
+uuid: 670ac98e-af1d-40bd-b000-5aca515a7045
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.about_project
+id: node.about_project.field_name
+field_name: field_name
+entity_type: node
+bundle: about_project
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

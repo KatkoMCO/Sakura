@@ -1,0 +1,16 @@
+uuid: cfd0aa7b-52ce-4d7c-801f-8c44688f120f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.food_reviews
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.food_reviews
+target_entity_type_id: node
+target_bundle: food_reviews
+default_langcode: site_default
+language_alterable: true

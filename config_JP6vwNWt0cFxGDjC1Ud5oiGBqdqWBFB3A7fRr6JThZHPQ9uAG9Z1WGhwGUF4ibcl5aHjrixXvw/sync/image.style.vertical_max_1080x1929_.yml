@@ -1,0 +1,23 @@
+uuid: dcd898d0-0a45-4ac4-ac1c-b5d9c34333e9
+langcode: en
+status: true
+dependencies: {  }
+name: vertical_max_1080x1929_
+label: 'Vertical Max (1080x1929)'
+effects:
+  995e4aae-53a7-446a-81ee-23fd19e0ef5a:
+    uuid: 995e4aae-53a7-446a-81ee-23fd19e0ef5a
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1080
+      height: 1929
+      anchor: center-center
+  1176db25-ff9c-475b-b115-ed4588c01b64:
+    uuid: 1176db25-ff9c-475b-b115-ed4588c01b64
+    id: image_scale
+    weight: -10
+    data:
+      width: 1300
+      height: 1300
+      upscale: true

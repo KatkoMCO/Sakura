@@ -1,0 +1,33 @@
+uuid: 32649b88-c631-458f-85c4-be4cad34e4a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_posts
+  module:
+    - node
+    - views
+  theme:
+    - sakura
+id: views_block__related_posts_block_1_2
+theme: sakura
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'views_block:related_posts-block_1'
+settings:
+  id: 'views_block:related_posts-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      food_reviews: food_reviews

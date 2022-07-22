@@ -1,0 +1,16 @@
+uuid: 5d66a81a-ec7b-41fd-8852-f2523c483f08
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.flavour
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.flavour
+target_entity_type_id: taxonomy_term
+target_bundle: flavour
+default_langcode: site_default
+language_alterable: true

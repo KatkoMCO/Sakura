@@ -1,0 +1,25 @@
+uuid: 584ab3f7-c859-4591-b040-b2a973790042
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.contact
+  module:
+    - system
+  theme:
+    - sakura
+id: footer
+theme: sakura
+region: footer
+weight: -10
+provider: null
+plugin: 'system_menu_block:contact'
+settings:
+  id: 'system_menu_block:contact'
+  label: Footer
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

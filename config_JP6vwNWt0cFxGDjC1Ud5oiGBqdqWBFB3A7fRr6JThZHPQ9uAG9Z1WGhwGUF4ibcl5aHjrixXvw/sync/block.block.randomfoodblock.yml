@@ -1,0 +1,25 @@
+uuid: 788a338b-a5ec-41e1-9e65-aa94a0d2a7cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - random_pokemon
+    - system
+  theme:
+    - sakura
+id: randomfoodblock
+theme: sakura
+region: sidebar_second
+weight: -11
+provider: null
+plugin: random_food_block
+settings:
+  id: random_food_block
+  label: 'Random Foods'
+  label_display: visible
+  provider: random_pokemon
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

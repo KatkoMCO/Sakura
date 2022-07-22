@@ -1,0 +1,246 @@
+uuid: 6f3d52d2-a7ce-4a44-b2be-163443a6f01d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.full
+    - field.field.node.food_reviews.field_category
+    - field.field.node.food_reviews.field_flavour
+    - field.field.node.food_reviews.field_rating
+    - field.field.node.food_reviews.field_restaurant_name
+    - field.field.node.food_reviews.field_review_comments
+    - field.field.node.food_reviews.field_review_description
+    - field.field.node.food_reviews.field_review_image
+    - image.style.large
+    - node.type.food_reviews
+  module:
+    - comment
+    - image
+    - layout_builder
+    - layout_discovery
+    - starrating
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'section 1'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          af5815ee-947b-451f-a9c0-a88a85323313:
+            uuid: af5815ee-947b-451f-a9c0-a88a85323313
+            region: second
+            configuration:
+              id: 'field_block:node:food_reviews:field_rating'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: starrating
+                label: hidden
+                settings:
+                  fill_blank: '1'
+                  icon_type: star
+                  icon_color: '7'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2fd0e2de-db1f-4852-92a9-e2542ef21b73:
+            uuid: 2fd0e2de-db1f-4852-92a9-e2542ef21b73
+            region: first
+            configuration:
+              id: 'field_block:node:food_reviews:field_restaurant_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'section 2'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          7df27699-2c6e-4389-abbb-32478fd4c6bd:
+            uuid: 7df27699-2c6e-4389-abbb-32478fd4c6bd
+            region: first
+            configuration:
+              id: 'field_block:node:food_reviews:field_category'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          31134064-c959-4657-8893-a85989861b35:
+            uuid: 31134064-c959-4657-8893-a85989861b35
+            region: second
+            configuration:
+              id: 'field_block:node:food_reviews:field_flavour'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'section 3'
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          2c5525e8-f3a3-4b31-a8ec-3a3891568d93:
+            uuid: 2c5525e8-f3a3-4b31-a8ec-3a3891568d93
+            region: first
+            configuration:
+              id: 'field_block:node:food_reviews:field_review_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d1811e12-5a31-480e-83ca-6e6fe60b27ed:
+            uuid: d1811e12-5a31-480e-83ca-6e6fe60b27ed
+            region: second
+            configuration:
+              id: 'field_block:node:food_reviews:field_review_description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cc8aa613-2734-4941-9aa0-91b5b5998e81:
+            uuid: cc8aa613-2734-4941-9aa0-91b5b5998e81
+            region: content
+            configuration:
+              id: 'field_block:node:food_reviews:field_review_comments'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: comment_default
+                label: hidden
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.food_reviews.full
+targetEntityType: node
+bundle: food_reviews
+mode: full
+content:
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_flavour:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_rating:
+    type: starrating
+    label: hidden
+    settings:
+      fill_blank: '1'
+      icon_type: star
+      icon_color: '7'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_restaurant_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_review_comments:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_review_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_review_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  links: true

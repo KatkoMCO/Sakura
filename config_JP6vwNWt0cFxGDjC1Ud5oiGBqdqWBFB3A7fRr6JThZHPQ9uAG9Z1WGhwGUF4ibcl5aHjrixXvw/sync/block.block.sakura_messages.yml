@@ -1,0 +1,22 @@
+uuid: 53750d59-7c66-4825-880c-d9322c0ca778
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sakura
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: sakura_messages
+theme: sakura
+region: breadcrumb
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

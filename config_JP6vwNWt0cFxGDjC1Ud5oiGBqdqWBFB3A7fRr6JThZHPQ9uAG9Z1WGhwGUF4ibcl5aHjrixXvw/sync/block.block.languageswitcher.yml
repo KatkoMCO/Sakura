@@ -1,0 +1,20 @@
+uuid: d0d96284-2ea4-4e73-909f-734496d758ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - sakura
+id: languageswitcher
+theme: sakura
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

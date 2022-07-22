@@ -1,0 +1,20 @@
+uuid: c59f3539-0137-47d3-9c35-e6f10fd134ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_flavour
+field_name: field_flavour
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 822b6c6f-97ce-46d4-b1bb-d1520cb3b370
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_restaurant_name
+    - node.type.food_reviews
+id: node.food_reviews.field_restaurant_name
+field_name: field_restaurant_name
+entity_type: node
+bundle: food_reviews
+label: 'Restaurant Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

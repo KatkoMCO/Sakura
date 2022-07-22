@@ -1,0 +1,22 @@
+uuid: 9f36a56a-0077-49eb-b4cf-4686776d6001
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sakura
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: sakura_powered
+theme: sakura
+region: footer
+weight: -9
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

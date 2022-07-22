@@ -1,0 +1,15 @@
+uuid: a46ed651-8925-4686-9928-09cbe40fffde
+langcode: en
+status: true
+dependencies: {  }
+name: max_1300x1300
+label: 'Max 1300x1300'
+effects:
+  9e1d1d1d-5093-4a2c-8bd7-df60939e2777:
+    uuid: 9e1d1d1d-5093-4a2c-8bd7-df60939e2777
+    id: image_scale
+    weight: 1
+    data:
+      width: 1300
+      height: 1300
+      upscale: false

@@ -1,0 +1,20 @@
+uuid: e8eda1cf-f217-48f7-a145-fc63f2b5b82c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sakura
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: sakura_local_actions
+theme: sakura
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

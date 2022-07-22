@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: bec88bde-aa2d-402b-acca-f49ed2828c97
+name: Sakura
+mail: sakura@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /mainpage
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

@@ -1,0 +1,25 @@
+uuid: 3ea390b0-8a94-458b-9bc0-8cbcc715d0a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.location
+  module:
+    - system
+  theme:
+    - sakura
+id: location
+theme: sakura
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:location'
+settings:
+  id: 'system_menu_block:location'
+  label: Location
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

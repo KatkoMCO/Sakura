@@ -1,0 +1,22 @@
+uuid: bbc399e3-0034-49e9-909b-20ede5e85591
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sakura
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: sakura_help
+theme: sakura
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

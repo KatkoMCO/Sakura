@@ -1,0 +1,29 @@
+uuid: 59691c23-392d-4996-aac3-993f2747834d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - system
+    - views
+  theme:
+    - sakura
+id: views_block__categories_block_1
+theme: sakura
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'views_block:categories-block_1'
+settings:
+  id: 'views_block:categories-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

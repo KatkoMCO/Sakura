@@ -1,0 +1,8 @@
+label: Categorías
+display:
+  default:
+    display_options:
+      title: Categorías
+      fields:
+        name:
+          separator: '  '

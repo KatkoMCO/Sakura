@@ -1,0 +1,29 @@
+uuid: 74be8e19-33b7-41d0-ac4c-77b23540710d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flavour
+    - node.type.food_reviews
+    - taxonomy.vocabulary.flavour
+id: node.food_reviews.field_flavour
+field_name: field_flavour
+entity_type: node
+bundle: food_reviews
+label: Flavour
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      flavour: flavour
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

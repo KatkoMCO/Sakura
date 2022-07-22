@@ -1,0 +1,30 @@
+uuid: c27b4138-9fb7-4953-b67f-1fab0d7e288b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:39a276af-ff65-467e-ab7c-66b84f74cacf'
+  module:
+    - block_content
+    - system
+  theme:
+    - sakura
+id: jumbotrom
+theme: sakura
+region: jumbotrom
+weight: -9
+provider: null
+plugin: 'block_content:39a276af-ff65-467e-ab7c-66b84f74cacf'
+settings:
+  id: 'block_content:39a276af-ff65-467e-ab7c-66b84f74cacf'
+  label: Jumbotrom
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

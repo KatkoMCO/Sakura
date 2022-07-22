@@ -1,0 +1,35 @@
+uuid: 8442fa77-0510-4da5-b879-2b569e8abdb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.food_reviews.field_category
+    - field.field.node.food_reviews.field_flavour
+    - field.field.node.food_reviews.field_rating
+    - field.field.node.food_reviews.field_restaurant_name
+    - field.field.node.food_reviews.field_review_comments
+    - field.field.node.food_reviews.field_review_description
+    - field.field.node.food_reviews.field_review_image
+    - node.type.food_reviews
+  module:
+    - user
+id: node.food_reviews.teaser
+targetEntityType: node
+bundle: food_reviews
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true
+  field_flavour: true
+  field_rating: true
+  field_restaurant_name: true
+  field_review_comments: true
+  field_review_description: true
+  field_review_image: true
+  langcode: true

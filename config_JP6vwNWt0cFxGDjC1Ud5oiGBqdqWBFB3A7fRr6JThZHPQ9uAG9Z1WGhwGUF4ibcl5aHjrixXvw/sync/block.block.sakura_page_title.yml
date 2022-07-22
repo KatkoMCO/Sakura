@@ -1,0 +1,20 @@
+uuid: 2ba5ebb6-f601-4822-8ace-1cb375f545af
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sakura
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: sakura_page_title
+theme: sakura
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
