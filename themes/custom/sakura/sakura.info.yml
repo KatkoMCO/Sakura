@@ -1,0 +1,23 @@
+name: Sakura
+type: theme
+core_version_requirement: ^8 || ^9
+description: Welcome to Sakura, the best food review page
+package: Custom
+base theme: classy
+libraries:
+  - sakura/global-styling
+  - sakura/global-scripts
+
+regions:
+  branding: Branding
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  jumbotrom: Jumbotrom
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer_third: 'Footer Third'
+  footer: Footer

@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f8f8f8;
+}
+
+.nav-color {
+  background-color: #242422;
+}
+
+.navbar {
+  &-brand {
+    align-items: center;
+
+    h1 {
+      font-size: 22px;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+      font-weight: 800;
+
+      a {
+        display: block;
+        color: #ffffff;
+      }
+    }
+    h6 {
+      font-size: 12px;
+    }
+  }
+
+  .navbar-collapse {
+    margin-left: 10px;
+
+    .navbar-nav {
+      .nav-link {
+        color: #ffffff;
+        &.is-active {
+          font-weight: 600;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.content-container{
+    padding: 4em 17em;
+}
+
+
+.view-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .view-item {
+    padding: 1rem;
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      color: rgba(0, 0, 0, 0.712);
+      text-decoration: none;
+      //   font-weight: 600;
+    }
+  }
+}
+
+.card{
+    border: none;
+}
+.card-header{
+    background: rgb(255, 189, 65);
+    color: #ffffff;
+    font-weight: 600;
+}
+.card-body{
+    background: rgb(255, 242, 217);
+}
+.views-field-field-flavour{
+    color: rgb(255, 189, 65);
+}
+
+.footer {
+    padding: 0 17em;
+    background-color: #242422;
+  .footer-color {
+    color: #ffffff;
+  }
+}
+
+.taxomy-term {
+  padding: 0.5rem 1.25rem;
+
+  a {
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+}

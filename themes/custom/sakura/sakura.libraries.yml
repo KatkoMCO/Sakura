@@ -1,0 +1,12 @@
+global-styling:
+  version: 1.0
+  css:
+    theme:
+      assets/css/main.css: {}
+
+global-scripts:
+  version: 1.0
+  js:
+    assets/js/main.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,6 @@
+name: Random Pokémon
+type: module
+description: This module generates random Pokémon
+package: Random Pokémon
+core_version_requirement: ^8 || ^9
+version: 1.0.0

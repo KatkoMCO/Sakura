@@ -1,0 +1,7 @@
+random_pokemon.content:
+  path: '/random-pokemon'
+  defaults:
+    _controller: '\Drupal\random_pokemon\Controller\RandomPokemonController::getRandomPokemon'
+    _title: Random Food Recipe
+  requirements:
+    _permission: 'poke permiso'

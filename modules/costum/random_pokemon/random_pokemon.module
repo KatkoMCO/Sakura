@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Module helper file for the Random Food Recipe module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+ /**
+  * Implements hook_help().
+  */
+
+    function random_pokemon_help($route_name, RouteMatchInterface $route_match) {
+        switch ($route_name) {
+            case 'help.page.random_pokemon':
+                return t('
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Random Food Recipe</h2>
+                            <p>
+                                This module provides a simple way to generate a random Food Recipe. API from: https://www.themealdb.com/api.php
+                                 
+                            </p>
+                        <p>
+                            <strong>Random Food Recipe</strong>
+                        </p>
+                    </div>
+                </div>'
+                );
+        }
+    }
